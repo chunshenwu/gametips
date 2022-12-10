@@ -4,6 +4,8 @@
     package="com.gmboy.gametips">
 
     <application
+        android:name=".application.MyApplication"
+
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -42,6 +44,27 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
+<!--        FB-->
+    <!--        FB-init-->
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+
+<!--        <meta-data-->
+<!--            android:name="com.facebook.sdk.ApplicationName"-->
+<!--            android:value="GameTips" />-->
+
+<!--        ContentProvider-->
+
+        <provider
+            android:authorities="com.facebook.app.FacebookContentProvider918167819073707"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
 
 </manifest>

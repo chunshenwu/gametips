@@ -1,4 +1,9 @@
 <resources>
+<!--    FB-->
+    <string name="facebook_app_id">5941609032598320</string>
+    <string name="facebook_client_token">9081bc29cb9323ab5b494a1067372ff1</string>
+
+
     <string name="app_name">Game Tips</string>
     <string name="title_activity_main">MainActivity</string>
     <!-- Strings used for fragments for navigation -->
